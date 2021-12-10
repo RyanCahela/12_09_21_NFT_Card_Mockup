@@ -24,10 +24,8 @@ The designs were created to the following widths:
 ## Typography
 
 ### Body Copy
-
 - Font size (paragraph): 18px
 
 ### Font
-
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
 - Weights: 300, 400, 600

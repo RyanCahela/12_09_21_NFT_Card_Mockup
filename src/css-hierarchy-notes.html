@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Hierarchy Notes</title>
+    <style>
+      :root {
+        /*************\
+        Value Creation
+        \*************/
+        /* colors */
+        --oxford-blue: hsla(217, 96%, 11%, 1);
+        --space-cadet: hsla(248, 31%, 23%, 1);
+        --heliotrope-gray: hsla(277, 7%, 63%, 1);
+        --light-steel-blue: hsla(214, 27%, 78%, 1);
+        --alice-blue: hsla(208, 71%, 96%, 1);
+        /* font */
+        --ff-helvetica-sans: Helvetica, sans-serif;
+
+        /*************\
+        Assign to generic variables for easy theaming
+        \*************/
+        /* colors */
+        --body-bg-color: var(--oxford-blue);
+        --primary-font-color: var(--alice-blue);
+        --section-bg-color: var(--space-cadet);
+
+        /* font */
+        --primary-font-family: var(--ff-helvetica-sans);
+      }
+
+      /******\
+      Reset
+      the only time I use element selectors in the reset. Single responsibility pricipal.
+      \******/
+
+      body {
+        margin: 0;
+      }
+
+      /*******\
+      Page
+      \*******/
+      .body {
+        background-color: var(--body-bg-color);
+        color: var(--primary-font-color);
+        font-family: var(--primary-font-family);
+      }
+
+      /*******\
+      Layout
+      \*******/
+      .grid-layout {
+        display: grid;
+        max-width: 900px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 1rem;
+      }
+
+      .section {
+        background-color: var(--section-bg-color);
+        padding-block: 0.5rem;
+        padding-inline: 1.5rem;
+      }
+    </style>
+  </head>
+  <body class="body grid-layout">
+    <h1>Hierarchy of a web page</h1>
+    <h2>Page Elements</h2>
+    <section class="section">
+      <h3>Page</h3>
+      <ul>
+        <li>
+          <p>The top level entitiy in a web page</p>
+        </li>
+      </ul>
+    </section>
+    <section class="section">
+      <h3>Layout</h3>
+      <ul>
+        <li>
+          <p>Sub sections of the page E.G. Header, Sidebar, Main.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="section">
+      <h3>Module (optional)</h3>
+      <ul>
+        <li>
+          <p>
+            A collection of components that solve a specific task, good for
+            large applications and you need to have a way to group components
+            that solve the same thing.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="section">
+      <h3>Component</h3>
+      <ul>
+        <li>
+          <p>
+            Self contained in nature, they adhere to the single responsibility
+            principal, A component does one thing, it solves a specific task.
+          </p>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
