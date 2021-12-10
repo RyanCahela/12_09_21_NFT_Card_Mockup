@@ -6,25 +6,26 @@
   --blue-400: 215 51% 70%;
   --cyan-500: 178 100% 50%;
 
-  --primary-color: var(--blue-400);
-  --primary-accent-color: var(--cyan-500);
-
   /* Neutral */
   --blue-900: 217 54% 11%;
   --blue-800: 216 50% 16%;
   --blue-700: 215 32% 27%;
   --white: 0 0% 100%;
 
-  --ff-outfit: 'Outfit', sans-serif;
-
+  --ff-outfit: "Outfit", sans-serif;
 
   /* Style Handles */
   /* Colors */
-  --body-bg: hsl(var(--blue-900));
-  --card-bg: hsl(var(--blue-800));
-  --line-color: hsl(var(--blue-700));
-  --avatar-border-color: hsl(var(--white));
-  --primary-font-color: hsl(var(--blue-400));
+
+  --primary-color: var(--blue-400);
+  --primary-accent-color: var(--cyan-500);
+  --body-bg: var(--blue-900);
+  --card-bg: var(--blue-800);
+  --line-color: var(--blue-700);
+  --avatar-border-color: var(--white);
+  --link-font-color: var(--white);
+  --link-hover-font-color: var(--primary-accent-color);
+  --eth-price-color: var(--primary-accent-color);
 
   /* font */
   --primary-font-family: var(--ff-outfit);
@@ -55,7 +56,9 @@ p {
 }
 
 img {
+  display: block;
   width: 100%;
+  object-fit: cover;
 }
 
 footer {
@@ -70,36 +73,117 @@ Utiltes
   max-width: max-content;
 }
 
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 1em;
+}
+
+.gap-0\.5 {
+  gap: 0.5em;
+}
+
+.w-2rem {
+  width: 2rem;
+}
+.pt-1\.2em {
+  padding-top: 1.2em;
+}
+
+.pb-0\.8em {
+  padding-bottom: 0.8em;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
+}
+
+.pblock-1\.5 {
+  padding-block: 1.5em;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.relative {
+  position: relative;
+}
+
 /*********************\
 Components
 \*********************/
 
 .body {
-  background-color: var(--body-bg);
+  background-color: hsl(var(--body-bg));
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
-  color: var(--primary-font-color);
+  color: hsl(var(--primary-color));
   font-family: var(--primary-font-family);
 }
 
+.nft-price {
+  color: hsl(var(--primary-accent-color));
+  font-size: 1rem;
+}
+
 .nft-card {
-  background-color: var(--card-bg);
-  padding: 1rem;
+  background-color: hsl(var(--card-bg));
+  padding: 1.5rem;
   min-width: 327px;
   max-width: 350px;
 }
 
+.nft-card__heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 .nft-card__author-details {
-  display: flex;
   align-items: center;
+  border-top: 1px solid hsl(var(--line-color));
+  display: flex;
   padding-top: 1rem;
   gap: 1rem;
 }
 
-.nft-card__author-avatar-container {
-  width: 2rem;
+.nft-card__hero-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
 }
 
+.nft-card__hero-container:hover::before {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(var(--primary-accent-color) / 0.5);
+  background-image: url("./images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.link {
+  text-decoration: none;
+  color: hsl(var(--link-font-color));
+}
 
+.link:hover {
+  color: hsl(var(--primary-accent-color));
+}
