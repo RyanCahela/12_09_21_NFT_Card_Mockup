@@ -24,8 +24,6 @@
   --line-color: var(--blue-700);
   --avatar-border-color: var(--white);
   --link-font-color: var(--white);
-  --link-hover-font-color: var(--primary-accent-color);
-  --eth-price-color: var(--primary-accent-color);
 
   /* font */
   --primary-font-family: var(--ff-outfit);
@@ -120,6 +118,14 @@ Utiltes
   position: relative;
 }
 
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 /*********************\
 Components
 \*********************/
@@ -186,4 +192,23 @@ Components
 
 .link:hover {
   color: hsl(var(--primary-accent-color));
+}
+
+/*********************\
+Themes
+\*********************/
+.sunshine-theme {
+  --charcoal: 223 18% 27%;
+  --lavender-web: 245 44% 90%;
+  --y-in-mn-blue: 220 33% 35%;
+  --marigold: 38 83% 55%;
+  --flame: 15 86% 53%;
+
+  --primary-color: var(--lavender-web);
+  --primary-accent-color: var(--flame);
+  --body-bg: var(--charcoal);
+  --card-bg: var(--y-in-mn-blue);
+  --line-color: var(--lavender-web);
+  --avatar-border-color: var(--white);
+  --link-font-color: var(--marigold);
 }
