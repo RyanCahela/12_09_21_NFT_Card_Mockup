@@ -18,6 +18,7 @@
       <form
         class="
           color-input-form
+          js-color-input-form
           p-1
           rounded-lg
           flex-col
@@ -25,8 +26,12 @@
           self-center
         "
       >
-        <label for="color-scheme">Color Scheme</label>
-        <select name="color-scheme">
+        <label for="color-scheme-select">Color Scheme</label>
+        <select
+          class="js-color-scheme-select"
+          name="color-scheme-select"
+          id="color-scheme-select"
+        >
           <option selected="selected" value="">Default</option>
           <option value="sunshine-theme">Sunshine</option>
           <option value="bodacious-theme">Bodacious</option>
@@ -90,5 +95,6 @@
         </div>
       </footer>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
