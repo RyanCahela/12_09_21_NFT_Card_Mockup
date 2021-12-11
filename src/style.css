@@ -75,12 +75,25 @@ Utiltes
   display: flex;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .align-center {
   align-items: center;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .gap-1 {
@@ -94,6 +107,11 @@ Utiltes
 .w-2rem {
   width: 2rem;
 }
+
+.pl-1 {
+  padding-left: 1em;
+}
+
 .pt-1\.2em {
   padding-top: 1.2em;
 }
@@ -104,6 +122,10 @@ Utiltes
 
 .pb-1 {
   padding-bottom: 1em;
+}
+
+.p-1 {
+  padding: 1em;
 }
 
 .pblock-1\.5 {
@@ -132,11 +154,15 @@ Components
 
 .body {
   background-color: hsl(var(--body-bg));
-  display: grid;
-  grid-template-rows: 1fr auto;
-  min-height: 100vh;
   color: hsl(var(--primary-color));
   font-family: var(--primary-font-family);
+}
+
+.body-grid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
 }
 
 .nft-price {
@@ -149,6 +175,7 @@ Components
   padding: 1.5rem;
   min-width: 327px;
   max-width: 350px;
+  align-self: center;
 }
 
 .nft-card__heading {
@@ -194,6 +221,10 @@ Components
   color: hsl(var(--primary-accent-color));
 }
 
+.color-input-form {
+  background-color: hsl(var(--card-bg));
+}
+
 /*********************\
 Themes
 \*********************/
@@ -211,4 +242,36 @@ Themes
   --line-color: var(--lavender-web);
   --avatar-border-color: var(--white);
   --link-font-color: var(--marigold);
+}
+
+.bodacious-theme {
+  --celadon-green: 176 94% 28%;
+  --caribbean-green: 164 95% 43%;
+  --vivid-sky-blue: 195 79% 63%;
+  --blue-bell: 241 30% 65%;
+  --tuscany: 347 30% 72%;
+
+  --primary-color: black;
+  --primary-accent-color: var(--tuscany);
+  --body-bg: var(--celadon-green);
+  --card-bg: var(--caribbean-green);
+  --line-color: var(--primary-color);
+  --avatar-border-color: var(--white);
+  --link-font-color: grey;
+}
+
+@media screen and (min-width: 768px) {
+  .body-grid {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+    max-width: max-content;
+  }
+
+  .footer {
+    grid-column: 1 / -1;
+  }
 }
