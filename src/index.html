@@ -15,28 +15,84 @@
   </head>
   <body class="body bodacious">
     <div class="body-grid">
-      <form
-        class="
-          color-input-form
-          js-color-input-form
-          p-1
-          rounded-lg
-          flex-col
-          justify-center
-          self-center
-        "
-      >
-        <label for="color-scheme-select">Color Scheme</label>
-        <select
-          class="js-color-scheme-select"
-          name="color-scheme-select"
-          id="color-scheme-select"
+      <div>
+        <form
+          class="
+            color-input-form
+            js-color-input-form
+            p-1
+            rounded-lg
+            flex-col
+            justify-center
+            self-center
+          "
         >
-          <option selected="selected" value="">Default</option>
-          <option value="sunshine-theme">Sunshine</option>
-          <option value="bodacious-theme">Bodacious</option>
-        </select>
-      </form>
+          <label for="color-scheme-select">Color Scheme</label>
+          <select
+            class="js-color-scheme-select"
+            name="color-scheme-select"
+            id="color-scheme-select"
+          >
+            <option selected="selected" value="">Default</option>
+            <option value="sunshine-theme">Sunshine</option>
+            <option value="bodacious-theme">Bodacious</option>
+          </select>
+        </form>
+        <form class="create-new-scheme-form flex-col align-start">
+          <h3>Create New Color Scheme</h3>
+          <label for="primary-color">Primary Color (Hex Value)</label>
+          <input
+            class="input"
+            name="primary-color"
+            id="primary-color"
+            minlength="3"
+            type="text"
+            maxlength="7"
+            size="7"
+          />
+          <label for="primary-accent-color">Accent Color (Hex Value)</label>
+          <input
+            class="input"
+            name="primary-accent-color"
+            id="primary-accent-color"
+            minlength="3"
+            type="text"
+            maxlength="7"
+            size="7"
+          />
+          <label for="body-bg">Page Background (Hex Value)</label>
+          <input
+            class="input"
+            name="body-bg"
+            id="body-bg"
+            minlength="3"
+            type="text"
+            maxlength="7"
+            size="7"
+          />
+          <label for="card-bg">Card Background (Hex Value)</label>
+          <input
+            class="input"
+            name="card-bg"
+            id="card-bg"
+            minlength="3"
+            type="text"
+            maxlength="7"
+            size="7"
+          />
+          <label for="link-color">Link Color (Hex Value)</label>
+          <input
+            class="input"
+            name="link-color"
+            id="link-color"
+            minlength="3"
+            type="text"
+            maxlength="7"
+            size="7"
+          />
+          <button class="button" type="submit">Save</button>
+        </form>
+      </div>
       <div class="inline-container self-center">
         <div class="nft-card rounded-lg">
           <div

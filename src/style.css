@@ -59,6 +59,11 @@ img {
   object-fit: cover;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
 /*********************\
 Utiltes
 \*********************/
@@ -79,6 +84,10 @@ Utiltes
 
 .align-center {
   align-items: center;
+}
+
+.align-start {
+  align-items: start;
 }
 
 .self-center {
@@ -160,6 +169,22 @@ Components
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 1rem;
+}
+
+.button {
+  background-color: hsl(var(--link-font-color));
+  padding-inline: 2em;
+  padding-block: 0.5em;
+}
+
+.create-new-scheme-form label {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.input {
+  padding: 0.5em;
+  font-size: 1.25rem;
 }
 
 .nft-price {
@@ -254,7 +279,7 @@ Themes
   --card-bg: var(--caribbean-green);
   --line-color: var(--primary-color);
   --avatar-border-color: var(--white);
-  --link-font-color: grey;
+  --link-font-color: var(--vivid-sky-blue);
 }
 
 @media screen and (min-width: 768px) {
