@@ -1,0 +1,20 @@
+.new-color-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  width: 100%;
+
+  &__preview {
+    display: inline-block;
+    grid-column: 2 / 3;
+    background-color: white;
+  }
+
+  &__label {
+    grid-column: -1 / 1;
+  }
+
+  &__input {
+    justify-self: start;
+  }
+}

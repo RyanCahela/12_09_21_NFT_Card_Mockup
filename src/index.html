@@ -51,18 +51,23 @@
           "
         >
           <h3>Create New Color Scheme</h3>
-          <div class="js-new-color-input">
-            <label for="primary-color">Primary Color (Hex Value)</label>
+          <div class="js-new-color-input new-color-input">
+            <label class="new-color-input__label" for="js-primary-color"
+              >Primary Color (Hex Value)</label
+            >
             <input
-              class="input"
+              class="new-color-input__input"
               name="primary-color"
-              id="primary-color"
+              id="js-primary-color"
               minlength="3"
               type="text"
               maxlength="7"
               size="7"
             />
-            <div class="color-preview js-color-preview"></div>
+            <span
+              class="new-color-input__preview"
+              id="js-primary-color-preview"
+            ></span>
           </div>
           <label for="primary-accent-color">Accent Color (Hex Value)</label>
           <input
@@ -165,7 +170,7 @@
         </div>
       </footer>
     </div>
-    <script src="select_color_scheme.js"></script>
-    <script src="create_new_color_scheme.js"></script>
+    <script src="./js/select_color_scheme.js"></script>
+    <script src="./js/create_new_color_scheme.js"></script>
   </body>
 </html>
