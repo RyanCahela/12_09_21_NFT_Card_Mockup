@@ -1,0 +1,34 @@
+/*********************\
+Themes
+\*********************/
+.sunshine-theme {
+  --charcoal: 223 18% 27%;
+  --lavender-web: 245 44% 90%;
+  --y-in-mn-blue: 220 33% 35%;
+  --marigold: 38 83% 55%;
+  --flame: 15 86% 53%;
+
+  --primary-color: var(--lavender-web);
+  --primary-accent-color: var(--flame);
+  --body-bg: var(--charcoal);
+  --card-bg: var(--y-in-mn-blue);
+  --line-color: var(--lavender-web);
+  --avatar-border-color: var(--white);
+  --link-font-color: var(--marigold);
+}
+
+.bodacious-theme {
+  --celadon-green: 176 94% 28%;
+  --caribbean-green: 164 95% 43%;
+  --vivid-sky-blue: 195 79% 63%;
+  --blue-bell: 241 30% 65%;
+  --tuscany: 347 30% 72%;
+
+  --primary-color: black;
+  --primary-accent-color: var(--tuscany);
+  --body-bg: var(--celadon-green);
+  --card-bg: var(--caribbean-green);
+  --line-color: var(--primary-color);
+  --avatar-border-color: var(--white);
+  --link-font-color: var(--vivid-sky-blue);
+}

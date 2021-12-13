@@ -1,0 +1,24 @@
+{
+  "name": "12_09_21_NFT_Card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanCahela/12_09_21_NFT_Card_Mockup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanCahela/12_09_21_NFT_Card_Mockup/issues"
+  },
+  "homepage": "https://github.com/RyanCahela/12_09_21_NFT_Card_Mockup#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1"
+  }
+}

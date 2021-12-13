@@ -1,0 +1,30 @@
+:root {
+  /*********************\
+  Colors
+  \*********************/
+  /* Primary */
+  --blue-400: 215 51% 70%;
+  --cyan-500: 178 100% 50%;
+
+  /* Neutral */
+  --blue-900: 217 54% 11%;
+  --blue-800: 216 50% 16%;
+  --blue-700: 215 32% 27%;
+  --white: 0 0% 100%;
+
+  --ff-outfit: "Outfit", sans-serif;
+
+  /* Style Handles */
+  /* Colors */
+
+  --primary-color: var(--blue-400);
+  --primary-accent-color: var(--cyan-500);
+  --body-bg: var(--blue-900);
+  --card-bg: var(--blue-800);
+  --line-color: var(--blue-700);
+  --avatar-border-color: var(--white);
+  --link-font-color: var(--white);
+
+  /* font */
+  --primary-font-family: var(--ff-outfit);
+}

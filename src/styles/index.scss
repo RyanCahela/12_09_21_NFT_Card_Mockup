@@ -1,0 +1,9 @@
+@use "./global-variables.scss";
+@use "./themes.scss";
+@use "./reset.scss";
+@use "./utiltes.scss";
+
+// bring in components styles
+@use "./components/index.scss";
+
+@use "./media_queries/tablet_query.scss";

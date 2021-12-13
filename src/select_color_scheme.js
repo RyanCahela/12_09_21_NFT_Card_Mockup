@@ -1,4 +1,4 @@
-(function main() {
+(function select_color_scheme() {
   //grab form elements
   const themeSelector = document.querySelector(".js-color-input-form");
   const body = document.body;

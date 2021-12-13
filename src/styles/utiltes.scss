@@ -1,0 +1,93 @@
+/*********************\
+Utiltes
+\*********************/
+.inline-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: max-content;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-1 {
+  gap: 1em;
+}
+
+.gap-0\.5 {
+  gap: 0.5em;
+}
+
+.w-2rem {
+  width: 2rem;
+}
+
+.pl-1 {
+  padding-left: 1em;
+}
+
+.pt-1\.2em {
+  padding-top: 1.2em;
+}
+
+.pb-0\.8em {
+  padding-bottom: 0.8em;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+.pblock-1\.5 {
+  padding-block: 1.5em;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.relative {
+  position: relative;
+}
+
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.card-bg {
+  background-color: hsl(var(--card-bg));
+}
