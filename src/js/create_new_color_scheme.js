@@ -19,7 +19,7 @@
   });
 
   //helper function
-  function appendWithHashtag(string) {
+  function appendWithHashtag(string = "") {
     if (string[0] === "#") return string;
     return "#" + string;
   }
