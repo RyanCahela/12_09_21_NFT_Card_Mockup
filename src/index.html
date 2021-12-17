@@ -36,17 +36,28 @@
         <form class="js-create-new-scheme-form create-new-scheme-form">
           <h3>Create New Color Scheme</h3>
           <!---------------------------------!
+            Color Scheme Name Input
+          !----------------------------------->
+          <label class="text-input__label" for="--color-scheme-name"
+            >Color Scheme Name</label
+          >
+          <input
+            class="text-input__input"
+            name="--color-scheme-name"
+            id="--color-scheme-name"
+            type="text"
+          />
+          <!---------------------------------!
             Primary Color Input 
           !----------------------------------->
           <div class="new-color-input">
             <label class="new-color-input__label" for="--primary-color"
               >Primary Color (Hex Value)</label
             >
-
             <input
-              class="new-color-input__input"
-              name="primary-color"
-              id="js-primary-color-input"
+              class="new-color-input__input js-primary-color-input"
+              name="--primary-color"
+              id="--primary-color"
               minlength="3"
               type="text"
               maxlength="7"
@@ -54,8 +65,7 @@
             />
 
             <span
-              class="new-color-input__preview"
-              id="js-primary-color-preview"
+              class="new-color-input__preview js-primary-color-preview"
             ></span>
           </div>
           <!---------------------------------!
@@ -66,7 +76,7 @@
               >Accent Color (Hex Value)</label
             >
             <input
-              class="new-color-input__input"
+              class="new-color-input__input js-accent-color-input"
               name="--primary-accent-color"
               id="js-accent-color-input"
               minlength="3"
@@ -75,8 +85,7 @@
               size="7"
             />
             <span
-              class="new-color-input__preview"
-              id="js-accent-color-preview"
+              class="new-color-input__preview js-accent-color-preview"
             ></span>
           </div>
           <!---------------------------------!
@@ -87,17 +96,16 @@
               >Page Background (Hex Value)</label
             >
             <input
-              class="new-color-input__input"
+              class="new-color-input__input js-page-background-color-input"
               name="--body-bg"
-              id="js-page-background-color-input"
+              id="--body-bg"
               minlength="3"
               type="text"
               maxlength="7"
               size="7"
             />
             <span
-              class="new-color-input__preview"
-              id="js-page-background-color-preview"
+              class="new-color-input__preview js-page-background-color-preview"
             ></span>
           </div>
           <!---------------------------------!
@@ -108,17 +116,16 @@
               >Card Background (Hex Value)</label
             >
             <input
-              class="new-color-input__input"
+              class="new-color-input__input js-card-background-color-input"
               name="--card-bg"
-              id="js-card-background-color-input"
+              id="--card-bd"
               minlength="3"
               type="text"
               maxlength="7"
               size="7"
             />
             <span
-              class="new-color-input__preview"
-              id="js-card-background-color-preview"
+              class="new-color-input__preview js-card-background-color-preview"
             ></span>
           </div>
           <!---------------------------------!
@@ -129,18 +136,15 @@
               >Link Color (Hex Value)</label
             >
             <input
-              class="new-color-input__input"
+              class="new-color-input__input js-link-color-input"
               name="--link-color"
-              id="js-link-color-input"
+              id="--link-color"
               minlength="3"
               type="text"
               maxlength="7"
               size="7"
             />
-            <span
-              class="new-color-input__preview"
-              id="js-link-color-preview"
-            ></span>
+            <span class="new-color-input__preview js-link-color-preview"></span>
           </div>
           <button class="button" type="submit">Save</button>
         </form>
