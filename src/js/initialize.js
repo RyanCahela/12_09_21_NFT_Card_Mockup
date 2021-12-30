@@ -5,16 +5,14 @@
   const red400 = "1.13,83.25%,62.55%";
 
   const storage = {
-    theme: {
-      red: {
-        "--primary-color": red100,
-        "--primary-accent-color": red200,
-        "--body-bg": red400,
-        "--card-bg": red100,
-        "--line-color": red100,
-        "--avatar-border-color:": red100,
-        "--link-font-color:": red400,
-      },
+    redTheme: {
+      "--primary-color": red100,
+      "--primary-accent-color": red200,
+      "--body-bg": red400,
+      "--card-bg": red100,
+      "--line-color": red100,
+      "--avatar-border-color:": red100,
+      "--link-font-color:": red400,
     },
   };
 
@@ -22,11 +20,32 @@
 
   const jsColorSchemeSelect = document.querySelector(".js-color-scheme-select");
 
+  const themeNames = getAllLocalStorageThemeNames(localStorage);
+
+  console.log("themeNames", themeNames);
+
+  for (let i = 0; i < themeNames.length; i++) {
+    const themeName = localStorage.getItem(themeNames[i]);
+    const optionElement = createOptionElement({
+      value: themeName,
+      textContent: themeName,
+    });
+    jsColorSchemeSelect.appendChild(optionElement);
+  }
+
   //helper functions
-  // function createOptionElement({
+  function createOptionElement({ value, textContent }) {
+    const optionElement = document.createElement("option");
+    optionElement.value = value;
+    optionElement.textContent = textContent;
+    return optionElement;
+  }
 
-  // }) {
-  //   const optionElement
-
-  // }
+  function getAllLocalStorageThemeNames(storageObject) {
+    const storageNames = [];
+    for (let i = 0; i < storageObject.length; i++) {
+      storageNames.push(storageObject.key(i));
+    }
+    return storageNames;
+  }
 })();
