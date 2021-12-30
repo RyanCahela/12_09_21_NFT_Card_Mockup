@@ -36,7 +36,6 @@
   });
 
   //helper function
-
   function querySelector(CssSelector) {
     return document.querySelector(CssSelector);
   }
