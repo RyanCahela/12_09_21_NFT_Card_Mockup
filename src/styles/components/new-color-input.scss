@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  width: 100%;
+  max-width: 100%;
 
   &__preview {
     display: inline-block;

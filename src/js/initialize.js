@@ -27,8 +27,8 @@
   for (let i = 0; i < themeNames.length; i++) {
     const themeName = localStorage.getItem(themeNames[i]);
     const optionElement = createOptionElement({
-      value: themeName,
-      textContent: themeName,
+      value: themeNames,
+      textContent: themeNames[i],
     });
     jsColorSchemeSelect.appendChild(optionElement);
   }
